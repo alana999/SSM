@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="dept" class="com.alana.spring6.iocxml.di2.Dept" >
+        <property name="dname" value="security dep"></property>
+    </bean>
+    <bean id="emp" class="com.alana.spring6.iocxml.di2.Emp">
+        <property name="ename" value="Musk"></property>
+        <property name="age" value="18"></property>
+        <property name="dept" ref="dept"></property>
+
+        <property name="loves">
+            <array>
+                <value>learning</value>
+                <value>coding</value>
+                <value>runing</value>
+            </array>
+        </property>
+    </bean>
+</beans>
