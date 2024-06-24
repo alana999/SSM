@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="teaone" class="com.alana.spring6.iocxml.dimap.Tea">
+        <property name="tid" value="01"></property>
+        <property name="tname" value="林雨"></property>
+    </bean>
+
+    <bean id="teatwo" class="com.alana.spring6.iocxml.dimap.Tea">
+        <property name="tid" value="02"></property>
+        <property name="tname" value="道一"></property>
+    </bean>
+
+    <bean id="stu" class="com.alana.spring6.iocxml.dimap.Stu">
+        <property name="sid" value="20231799"></property>
+        <property name="sname" value="Alana"></property>
+        <property name="teaMap">
+            <map>
+                <entry>
+                    <key>
+                        <value>teaone</value>
+                    </key>
+                    <ref bean="teaone"></ref>
+                </entry>
+                <entry>
+                    <key>
+                        <value>teatwo</value>
+                    </key>
+                    <ref bean="teatwo"></ref>
+                </entry>
+            </map>
+
+        </property>
+    </bean>
+</beans>
