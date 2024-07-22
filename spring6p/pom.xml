@@ -11,6 +11,7 @@
     <modules>
         <module>firstspring</module>
         <module>srping_ioc_xml</module>
+        <module>spring_ioc_annotation</module>
     </modules>
 
     <properties>
