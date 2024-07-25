@@ -8,7 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="srping_ioc_xml" />
         <module name="firstspring" />
+        <module name="spring-jdbc-tx" />
         <module name="spring_ioc_annotation" />
+        <module name="spring_aop" />
+        <module name="spring-JUnit" />
       </profile>
     </annotationProcessing>
   </component>

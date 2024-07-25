@@ -12,6 +12,9 @@
         <module>firstspring</module>
         <module>srping_ioc_xml</module>
         <module>spring_ioc_annotation</module>
+        <module>spring_aop</module>
+        <module>spring-JUnit</module>
+        <module>spring-jdbc-tx</module>
     </modules>
 
     <properties>
@@ -48,5 +51,28 @@
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>2.19.0</version>
         </dependency>
+
+        <!--spring aop依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>6.0.2</version>
+        </dependency>
+        <!--spring aspects依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>6.0.2</version>
+        </dependency>
+
+        <!--spring对junit的支持相关依赖-->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>6.0.2</version>
+<!--            <scope>test</scope>-->
+        </dependency>
+
     </dependencies>
 </project>
